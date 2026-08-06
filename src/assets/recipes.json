@@ -9,6 +9,68 @@
 			}
 		}
 	],
+	"#minecraft:coals": [
+		{
+			"yield": 1,
+			"method": "minecraft:custom",
+			"origin": "#coals.json",
+			"components": {
+				"minecraft:charcoal": 1
+			}
+		},
+		{
+			"yield": 1,
+			"method": "minecraft:custom",
+			"origin": "#coals.json",
+			"components": {
+				"minecraft:coal": 1
+			}
+		}
+	],
+	"#minecraft:sands": [
+		{
+			"yield": 1,
+			"method": "minecraft:custom",
+			"origin": "#sands.json",
+			"components": {
+				"minecraft:sand": 1
+			}
+		},
+		{
+			"yield": 1,
+			"method": "minecraft:custom",
+			"origin": "#sands.json",
+			"components": {
+				"minecraft:red_sand": 1
+			}
+		}
+	],
+	"#minecraft:eggs": [
+		{
+			"yield": 1,
+			"method": "minecraft:custom",
+			"origin": "#eggs.json",
+			"components": {
+				"minecraft:egg": 1
+			}
+		},
+		{
+			"yield": 1,
+			"method": "minecraft:custom",
+			"origin": "#eggs.json",
+			"components": {
+				"minecraft:blue_egg": 1
+			}
+		},
+		{
+			"yield": 1,
+			"method": "minecraft:custom",
+			"origin": "#eggs.json",
+			"components": {
+				"minecraft:brown_egg": 1
+			}
+		}
+	],
 	"minecraft:acacia_button": [
 		{
 			"yield": 1,
@@ -2013,6 +2075,58 @@
 			"origin": "clay.json",
 			"components": {
 				"minecraft:clay_ball": 4
+			}
+		}
+	],
+	"minecraft:coal": [
+		{
+			"yield": 9,
+			"method": "minecraft:crafting_shapeless",
+			"origin": "coal.json",
+			"components": {
+				"minecraft:coal_block": 1
+			}
+		},
+		{
+			"yield": 1,
+			"method": "minecraft:blasting",
+			"origin": "coal_from_blasting_coal_ore.json",
+			"components": {
+				"minecraft:coal_ore": 1
+			}
+		},
+		{
+			"yield": 1,
+			"method": "minecraft:blasting",
+			"origin": "coal_from_blasting_deepslate_coal_ore.json",
+			"components": {
+				"minecraft:deepslate_coal_ore": 1
+			}
+		},
+		{
+			"yield": 1,
+			"method": "minecraft:smelting",
+			"origin": "coal_from_smelting_coal_ore.json",
+			"components": {
+				"minecraft:coal_ore": 1
+			}
+		},
+		{
+			"yield": 1,
+			"method": "minecraft:smelting",
+			"origin": "coal_from_smelting_deepslate_coal_ore.json",
+			"components": {
+				"minecraft:deepslate_coal_ore": 1
+			}
+		}
+	],
+	"minecraft:coal_block": [
+		{
+			"yield": 1,
+			"method": "minecraft:crafting_shaped",
+			"origin": "coal_block.json",
+			"components": {
+				"minecraft:coal": 9
 			}
 		}
 	],
@@ -10473,7 +10587,7 @@
 			"origin": "tnt.json",
 			"components": {
 				"minecraft:gunpowder": 5,
-				"minecraft:sand,minecraft:red_sand": 4
+				"#minecraft:sands": 4
 			}
 		}
 	],

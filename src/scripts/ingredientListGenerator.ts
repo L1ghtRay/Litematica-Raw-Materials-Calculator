@@ -2,9 +2,10 @@ import recipe_data from '../assets/recipes.json' with { type: 'json' };
 import { type RawMatsData } from './materialListGenerator.ts';
 
 
-const base_items = ['bone_meal', 'cobbled_deepslate', 'cobblestone', 'copper_ingot', 'diamond', 'emerald', 'gold_ingot', 'honey_bottle', 'iron_ingot', 'lapis_lazuli', 'netherite_ingot', 'quartz', 'redstone', 'resin_clump', 'slime_ball', 'wheat'];
+const base_items = ['bone_meal', 'coal', 'cobbled_deepslate', 'cobblestone', 'copper_ingot', 'diamond', 'emerald', 'gold_ingot', 'honey_bottle', 'iron_ingot', 'lapis_lazuli', 'netherite_ingot', 'quartz', 'redstone', 'resin_clump', 'slime_ball', 'wheat'];
 const compressed_items: Map<string, string> = new Map(Object.entries({
     'minecraft:bone_meal': 'minecraft:bone_block',
+    'minecraft:coal': 'minecraft:coal_block',
     'minecraft:copper_ingot': 'minecraft:copper_block',
     'minecraft:diamond': 'minecraft:diamond_block',
     'minecraft:emerald': 'minecraft:emerald_block',
@@ -27,12 +28,16 @@ function getStackSize(item: string): number {
     const items_16 = new Set([
         "minecraft:ender_pearl", 
         "minecraft:egg", 
-        "minecraft:snowball"
+        "minecraft:snowball",
+        "minecraft:blue_egg",
+        "minecraft:brown_egg"
     ]);
     
     const unstackable_keywords = new Set([
         "bed", 
-        "milk_bucket"
+        "milk_bucket",
+        "snow_bucket",
+        "lava_bucket"
     ])
     
     const sixteen_keywords = new Set([
