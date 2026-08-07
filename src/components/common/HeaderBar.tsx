@@ -1,6 +1,6 @@
 import Logo from '../../assets/common/Logo.svg?react';
 import { useRef, useEffect } from 'react';
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 
 interface NavLinks {
     text: string;
