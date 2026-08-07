@@ -1,4 +1,4 @@
-import Logo from '../../assets/common/Logo_svg.svg?react';
+import Logo from '../../assets/common/Logo.svg?react';
 import { useRef, useEffect } from 'react';
 import { Menu, X } from "lucide-react";
 

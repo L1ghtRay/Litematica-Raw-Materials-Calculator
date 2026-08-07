@@ -11,7 +11,6 @@ import DisplaySwitcher from './components/DisplaySwitcher.tsx';
 import { Box, CodeXml, Package2 } from 'lucide-react';
 import RawMaterialsGrid from './components/RawMaterialsGrid.tsx';
 import StorageBoxes from './components/StorageBoxes.tsx';
-import MCTooltipBox from './components/MCTooltipBox.tsx';
 
 export default function App() {
 	const [mats_data, setMatsData] = useState<RawMatsData | null>(null);

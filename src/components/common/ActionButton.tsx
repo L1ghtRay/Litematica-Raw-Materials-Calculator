@@ -7,8 +7,10 @@ interface ActionButtonProps {
     font?: string;
     disabled?: boolean;
     className?: string;
+    classAdd?: string;
     disabledClassName?: string;
     dimClassName?: string;
+    labelClassAdd?: string;
     onAction: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
