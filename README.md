@@ -19,7 +19,7 @@ Given a material list, the calculator:
 - Recursive recipe resolution using real Minecraft recipe data, including recipes with multiple valid crafting methods.
 - Stonecutter priority toggle, so recipes that can be cut with a stonecutter are preferred over crafting table recipes when both exist.
 - Reversible base ingredient compression, which converts loose ingots, gems, and similar items into their block form once you have enough to make a block, and back again for any remainder.
-- Tag substitution for ambiguous ingredients such as planks, wool, coal, sand, and eggs, so a generic tag like "any planks" resolves to a concrete item like oak planks.
+- Tag substitution for ambiguous ingredients such as planks, wool, coal, sand, and eggs, so a generic tag like "any planks" resolves to a concrete item like oak planks. (To-be-added)
 - Two output views for both the calculated results and the parsed material list: a Minecraft style inventory and shulker box grid, and a raw JSON style data view.
 - Minecraft styled UI, including item icons, tooltips, and inventory slot rendering, built to feel like part of the game.
 
