@@ -48,7 +48,7 @@ export default function FileDropBox({ onLoad }: FileDropBoxProps) {
                 className={`${file_name ? 'px-4 py-2': 'px-24 py-12 border-dashed'} w-fit h-fit border-2 rounded-lg flex items-center justify-center cursor-pointer ${is_dragging ? 'border-blue-500 hover:border-blue-50 bg-blue-950': ' border-slate-400'}`}
             >
                 <input ref={inputRef} type="file" className="hidden" onChange={(e) => readFile(e.target.files?.[0])} />
-                <p className="text-slate-50">{file_name ? file_name : 'Click to upload a JSON file'}</p>
+                <p className="text-slate-50">{file_name ? file_name : 'Click to upload a Litematica block-list JSON file'}</p>
             </div>
             {error && <p className="text-red-600 border-2 border-red-800 rounded-lg p-4">{error}</p>}
         </div>

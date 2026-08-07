@@ -29,7 +29,8 @@ export default function App() {
 	return (
 		<>
 			<HeaderBar />
-			<MainBody title={'Building Materials Calculator'} titleFont={'Minecraft-Title'} className="gap-6">
+			<MainBody classAdd="gap-8">
+				<h1 className={`text-slate-100 m-8 mb-2 uppercase text-4xl font-minecraft-title`}>Building Materials Calculator</h1>
 				<FileDropBox onLoad={handleMatsLoad} />
 				<DisplaySwitcher 
 					className="p-4 min-h-[20vh] min-w-1/2 max-w-2/3 bg-slate-800 border border-blue-950 rounded-lg"
