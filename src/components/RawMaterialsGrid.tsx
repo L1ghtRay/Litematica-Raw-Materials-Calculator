@@ -24,7 +24,7 @@ export default function RawMaterialsGrid({ data }: { data: Map<string, number> }
                         key={item}
                         item={item}
                         text={count.toString()}
-                        img={`/item/${text}.png`}
+                        img={`item/${text}.png`}
                     />
                 );
             })}
