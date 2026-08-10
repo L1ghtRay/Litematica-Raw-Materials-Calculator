@@ -16,7 +16,7 @@ export default function RawMaterialsGrid({ data }: { data: Map<string, number> }
     // }, [data])
 
     return (
-        <div className="grid w-full h-fit border border-slate-50 bg-[#162030] gap-y-2 p-4 rounded-lg place-items-center" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(4rem, 1fr))' }}>
+        <div className="grid w-full h-fit border border-slate-50 bg-[#162030] gap-y-2 p-4 rounded-lg place-items-center @container" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(4rem, 1fr))' }}>
             {Array.from(data).map(([item, count]) => {
                 const text = item.replace(/^minecraft:/, "");
                 return (

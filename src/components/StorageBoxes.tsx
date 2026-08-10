@@ -68,7 +68,7 @@ export default function StorageBoxes({ data = new Map([["minecraft:dirt", { sb_c
                                 <div className="w-full h-full @container relative group">
                                     <img src={`item/${slot.item.replace('minecraft:', '')}.png`} className="[image-rendering:pixelated] w-full h-full p-px" />
                                     <div className="w-full h-full absolute inset-0 bg-gray-50/0 group-hover:bg-gray-50/50 pointer-events-none" />
-                                    <span className="text-slate-50 text-shadow-gray-550 text-shadow-[0.1em_0.1em_0px_#133f3f] font-[Minecraft] text-[50cqw] absolute top-1/2 -right-1/32">{slot.count}</span>
+                                    <span className="text-slate-50 text-shadow-gray-550 text-shadow-[0.1em_0.1em_0px_#133f3f] font-[Minecraft] text-[50cqw] absolute top-1/2 -right-1/32 pointer-events-none">{slot.count}</span>
                                 </div>
                             </Tooltip>
                         ))}
