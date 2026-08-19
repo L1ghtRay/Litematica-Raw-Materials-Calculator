@@ -20,7 +20,8 @@ export default function OutputOptionsBar({ onCalculate }: OutputOptionsBarProps)
         '#minecraft:eggs': 'minecraft:egg',
         '#minecraft:coals': 'minecraft:coal',
         '#minecraft:sands': 'minecraft:sand',
-        '#minecraft:smelts_to_glass': 'minecraft:sand'
+        '#minecraft:smelts_to_glass': 'minecraft:sand',
+        '#minecraft:wooden_slabs': 'minecraft:oak_slab'
     }));
 
     return (
