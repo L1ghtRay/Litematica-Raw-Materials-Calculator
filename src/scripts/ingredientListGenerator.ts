@@ -2,7 +2,7 @@ import recipe_data from '../assets/recipes.json' with { type: 'json' };
 import { type RawMatsData } from './materialListGenerator.ts';
 
 
-const base_items = ['bone_meal', 'coal', 'cobbled_deepslate', 'cobblestone', 'copper_ingot', 'diamond', 'emerald', 'gold_ingot', 'honey_bottle', 'iron_ingot', 'lapis_lazuli', 'netherite_ingot', 'quartz', 'redstone', 'resin_clump', 'slime_ball', 'wheat'];
+const base_items = ['bone_meal', 'coal', 'cobbled_deepslate', 'cobblestone', 'copper_ingot', 'diamond', 'emerald', 'gold_ingot', 'honey_bottle', 'iron_ingot', 'lapis_lazuli', 'netherite_ingot', 'quartz', 'redstone', 'resin_clump', 'slime_ball', 'wheat', 'magma_block'];
 const compressed_items: Map<string, string> = new Map(Object.entries({
     'minecraft:bone_meal': 'minecraft:bone_block',
     'minecraft:coal': 'minecraft:coal_block',
@@ -207,6 +207,8 @@ export function calculateIngredients(raw_mats_data: RawMatsData, prioritize_ston
 
         if (processed_items.has(item)) return;
         processed_items.add(item);
+
+        active_recipes.addNode(item);
 
         if (base_items.some(x => item == 'minecraft:' + x)) return;
 
