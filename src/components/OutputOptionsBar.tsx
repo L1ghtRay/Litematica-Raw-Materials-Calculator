@@ -22,7 +22,7 @@ export default function OutputOptionsBar({ onCalculate }: OutputOptionsBarProps)
         '#minecraft:sands': 'minecraft:sand',
         '#minecraft:smelts_to_glass': 'minecraft:sand',
         '#minecraft:wooden_slabs': 'minecraft:oak_slab',
-        'minecraft_soul_fire_base_blocks': 'minecraft:soul_sand'
+        '#minecraft:soul_fire_base_blocks': 'minecraft:soul_sand'
     }));
 
     return (
